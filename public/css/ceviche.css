@@ -1,0 +1,161 @@
+:root{
+   
+    --hue-color:210;
+ 
+    --primer-color : hsl(var(--hue-color),100%,12%);
+ 
+    --first-color : hsl(var(--hue-color),82%,56%);
+    --color-hover : hsl(var(--hue-color),100%,70%);
+ 
+ 
+    --color-a: hsl(var(--hue-color),50%,30%);
+ 
+   --bg-nav:hsl(var(--hue-color),100%,98%);
+    
+ 
+ 
+    --segundo-color:hsl(var(--hue-color),90%,32%);
+    --color-white:#fff;
+    --title-color:hsl(var(--hue-color),72%,59%);
+    --text-color:hsl(var(--hue-color),30%,60%);
+    --text-color-ligth:hsl(var(--hue-color),18%,70%);
+    --body-color: hsl(var(--hue-color),70%,87%);
+ 
+    --input-color: hsl(var(--hue-color),98%,97%);
+ 
+    --bg-footer : hsl(var(--hue-color),40%,15%);
+ 
+    --body-font:Questrial,sans-serif;
+ 
+    --h1-size : 1.8rem;
+    --h2-size: 1.25rem;
+    --h3-size:1rem;
+    --normal-font-size :.938rem;
+    --mb-1:1rem;
+    --font-semi-bold:600;
+    --scroll-bar-color: hsl(var(--hue-color),20%,90%);
+    --scroll-thumb-color: hsl(var(--hue-color),20%,50%);
+ 
+    --first-rgba: rgba(38, 68, 115,0.1);
+ 
+ 
+ }
+
+ .conteiner_card_cevhices_bravos{
+    padding: 0 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+.content_home_ceviche{
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.litle_title_ceviche{
+    position: relative;
+    width: 100%;
+    text-align: left;
+}
+
+.content_home_ceviche h4{
+position: relative;
+z-index: 10;
+font-size: 2.5rem;
+color: var(--color-white);
+}
+.content_description_ceviche{
+    padding: 45px 20px 15px 10px;
+    margin-right: 20px;
+}
+
+.content_home_ceviche::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 68%);
+}
+.content_home_ceviche p {
+    font-size: 1.5rem;
+    font-size: var(--color-white);
+    z-index: 10;
+}
+
+.content_card_ceviches_bravos{
+    margin: 0.8rem 5rem;
+    border-top: 1.5px solid #ccc;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    gap: 20px;
+    background-color: var(--first-rgba);
+}
+
+.imgBx_card_ceviches_bravos{
+    width: 450px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.parrafo_description_ceviche{
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    color: var(--input-color);
+    word-break: break-all;
+}
+.btn_ceviches_pedir{
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    color: var(--color-white);
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--bg-footer);
+}
+
+.litle_title_ceviche{
+    padding: 5rem  2rem 7rem 3rem;
+    
+}
+.titulo_bravos{
+    font-size: 2rem;
+    color: var(--segundo-color);
+    font-weight: 100;
+}
+
+@media screen and (max-width: 800px){
+    .parrafo_description_ceviche {
+        font-size: 1.1rem;
+   }
+   .imgBx_card_ceviches_bravos{
+    width: 300px;
+   }
+   .content_description_ceviche{
+    padding: 0%;
+   }
+   .content_card_ceviches_bravos{
+    margin: 10px;
+   }
+ }
+
+@media screen and (max-width: 580px){
+ .content_card_ceviches_bravos {
+    flex-direction: column;
+}
+.imgBx_card_ceviches_bravos{
+    width: 100%;
+   }
+   .titulo_bravos{
+    font-size: 1.5rem;
+   }
+}
